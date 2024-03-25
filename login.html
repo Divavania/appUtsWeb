@@ -1,98 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Login</title>
-    <style>
-        .container {
-            width: 400px;
-            margin: 0 auto;
-            margin-top: 50px;
-            padding: 20px;
-            border: 1px solid #ccc;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Login</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Login</h1>
+            <form action="#">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan password">
+                <button type="submit">Login</button>
+            </form>
+            <p id="error-message"></p>
+        </div>
 
-        h1 {
-            text-align: center;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input {
-            width: 100%;
-            padding: 5px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-        }
-
-        button {
-            width: 100%;
-            padding: 5px;
-            margin-top: 10px;
-            background-color: #000;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        #error-message {
-            color: red;
-            margin-top: 10px;
-            display: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Login</h1>
-        <form action="#">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Masukkan email">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Masukkan password">
-            <button type="submit">Login</button>
-        </form>
-        <p id="error-message"></p>
-    </div>
-
-    <script>
-        const emailInput = document.getElementById("email");
-        const passwordInput = document.getElementById("password");
-        const errorMessage = document.getElementById("error-message");
-
-        const loginForm = document.querySelector("form");
-
-        loginForm.addEventListener("submit", (event) => {
-            event.preventDefault();
-
-            const email = emailInput.value;
-            const password = passwordInput.value;
-
-            // Validasi email dan password
-            if (email === "" || password === "") {
-                errorMessage.textContent = "Email atau password tidak boleh kosong";
-                errorMessage.style.display = "block";
-                return;
-            }
-
-            // Simulasi proses login
-            if (email === "divavc@gmail.com" && password === "233307072") {
-                // Tampilkan alert "Anda berhasil login"
-                alert("Anda berhasil login!");
-                window.location.href = "order.html"; // Redirect ke halaman dashboard
-            } else {
-                errorMessage.textContent = "Email atau password salah";
-                errorMessage.style.display = "block";
-            }
-        });
-    </script>
-</body>
+        <script src="app.js"></script>
+    </body>
 </html>
