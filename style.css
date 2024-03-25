@@ -1,10 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    display: flex; /* Pusatkan kontainer secara horizontal */
+    display: flex; 
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Pastikan formulir terlihat pada semua tampilan */
+    min-height: 100vh; 
     background-size: cover;
     background-position: center;
 }
@@ -12,59 +12,59 @@ body {
 .container {
     width: 400px;
     padding: 30px;
-    border-radius: 5px; /* Tambahkan sudut bulat */
-    background-color: #fff; /* Gunakan putih untuk keterbacaan */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk kedalaman */
+    border-radius: 5px; 
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     margin: 0 auto;
     margin-top: 50px;
-    transition: transform 0.3s ease; /* Tambahkan transisi untuk kontainer */
+    transition: transform 0.3s ease; 
 }
 
 .container:hover {
-    transform: translateY(-5px); /* Terapkan efek sedikit angkat saat dihover */
+    transform: translateY(-5px); 
 }
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif; /* Font yang bersahabat */
+    font-family: 'Roboto', sans-serif; 
     font-size: 1.2em;
-    color: #333; /* Warna teks utama */
+    color: #333; 
 }
 
 form {
     display: flex;
-    flex-direction: column; /* Susun label dan input secara vertikal */
+    flex-direction: column; 
 }
 
 input {
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 3px; /* Tambahkan radius border yang halus */
+    border-radius: 3px; 
     margin-bottom: 15px;
-    transition: border-color 0.3s ease; /* Tambahkan transisi untuk perubahan warna border input */
+    transition: border-color 0.3s ease; 
 }
 
 button {
     width: 100%;
     padding: 10px 15px;
-    background-color: #4CAF50; /* Warna hijau untuk tindakan positif */
+    background-color: #4CAF50; 
     color: #fff;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Tambahkan transisi untuk perubahan warna latar belakang tombol */
+    transition: background-color 0.3s ease; 
 }
 
 button:hover {
-    background-color: #3e8e41; /* Warna hijau yang lebih gelap saat dihover */
+    background-color: #3e8e41; 
 }
 
 #error-message {
     color: red;
     margin-top: 10px;
     display: none;
-    font-weight: bold; /* Sorot pesan kesalahan */
+    font-weight: bold; 
 }
 
 ul.items {
@@ -77,16 +77,16 @@ li.item {
     margin-bottom: 15px;
     padding: 10px 15px;
     border-radius: 5px;
-    background-color: #fff; /* Latar belakang item */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Bayangan item yang halus */
-    display: flex; /* Izinkan elemen inline */
-    justify-content: space-between; /* Ratakan konten secara horizontal */
-    cursor: pointer; /* Tunjukkan klik */
-    transition: background-color 0.3s ease; /* Tambahkan transisi untuk perubahan warna latar belakang item */
+    background-color: #fff; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    justify-content: space-between; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
 li.item:hover {
-    background-color: #f5f5f5; /* Warna latar belakang yang lebih ringan saat dihover */
+    background-color: #f5f5f5; 
 }
 
 .item input[type="checkbox"] {
